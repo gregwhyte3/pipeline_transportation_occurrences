@@ -2,7 +2,7 @@
 
 
 ## Background Information
-The Canada Energy Regulator (CER) quarterly publishes a pipeline incidents [dataset](https://open.canada.ca/data/en/dataset/7dffedc4-23fa-440c-a36d-adf5a6cc09f1) (ranges from 2008 to current). As with any dataset, it required some cleaning, so I wrote a python script that parsed the entire file and removed unnecessary columns. This same cleaning phase was also done more efficiently in an Alteryx workflow. 
+The Canada Energy Regulator (CER) quarterly publishes a pipeline incidents dataset (ranges from 2008 to current). As with any dataset, it required some cleaning, so I wrote a python script that parsed the entire file and removed unnecessary columns. This same cleaning phase was also done more efficiently in an Alteryx workflow. 
 
 
 ## Data Source
