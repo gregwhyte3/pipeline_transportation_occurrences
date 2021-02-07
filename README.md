@@ -13,11 +13,15 @@ The Open Government website provides access to dataset and can be viewed [here](
 Alteryx provides an intuitive (intuitive for me because I have an Engineering background) way of analyzing data. The datastream (called workflow in Alteryx) provides an efficient way of importing, cleaning, and exporting data—Extract, Transform and Load (ETL) all in one tool! 
 
 Using Alteryx saved a massive amount of data preparation time—about 90%! 
+
+Alteryx Workflow is shown below.
+
 ![Workflow](https://github.com/gregwhyte3/pipeline_transportation_occurrences/blob/master/Alteryx%20Workflow/alteryx_pipeline.PNG)
 
 
-
-
+## Next Steps
+* Exploratory Data Analysis
+* Design Tableau Dashboard for key metrics
 
 
 
