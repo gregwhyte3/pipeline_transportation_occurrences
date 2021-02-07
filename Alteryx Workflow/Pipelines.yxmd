@@ -1,0 +1,810 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.4">
+  <Nodes>
+    <Node ToolID="10">
+      <GuiSettings>
+        <Position x="786" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"Pipeline Name"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">True</Value>
+          <Value name="Drop Down (81)">title</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1062" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline_cleaned.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>pipeline_cleaned.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="90" y="18" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Import file</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>pipeline-incidents-comprehensive-data.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Incident Number" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Incident Types" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Reported Date" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Nearest Populated Centre" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Province" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Company" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Status" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Latitude" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Longitude" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Approximate Volume Released (m3)" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Substance" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Release Type" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Significant" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Year" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Occurrence Date and Time" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Discovered Date and Time" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Detailed what happened" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="What happened category" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Detailed why it happened" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Why it happened category" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Duration of interruption of pipeline operations" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Pipeline or Facility Type" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Activity being performed at time of incident" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="How the incident was discovered" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Closed Date" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Pipeline or facility equipment involved" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Rupture" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Incident type" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Released substance type" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Released volume (m3)" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Pipe body release" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Residual effects on the environment" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Source of Explosion" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Source of Fire" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Activity at time of fatality" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Number of fatalities" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Type of Injury" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Number of individuals injured" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Workdays lost" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Work restricted by injury" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Conditions that resulted in the operation beyond  limits" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Conditions that resulted in adverse effects on the environment" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Number of people evacuated" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Regulation" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Pipeline Name" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Pipeline outside diameter (NPS)" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Pipeline length (km)" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Substance carried" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Facility Name" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Facility Type" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Facility latitude" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Facility longitude" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Country" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Affects Company Property" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Off Company Property" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Affects Pipeline right-of-way" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Affects off Pipeline right-of-way" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Land Use" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Population Density" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Kilometre post" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Emergency Level" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Investigation Type" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Was NEB Staff Deployed" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Related NEB event number" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Equipment or component involved" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Design standard" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Nominal pipe size" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Material" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Material grade" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Schedule" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Design wall thickness (mm)" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Custom design wall thickness (mm)" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Actual wall thickness (mm)" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Licensed maximum operating pressure (kPa)" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Restricted operating pressure (kPa)" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Actual operating pressure at time of failure (kPa)" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Designed depth of cover (m)" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Actual depth of cover (m)" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Year of manufacture" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Year of installation" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Year when put into service" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Most recent cathodic protection reading at incident site (mV vs. Cu/CuSO4)" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Weld type" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Seam type" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Seam joining method" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Seam clock position" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Coating location" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Coating type" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Coating condition" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Application method" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Year when the coating was applied" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Insulation installed" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Repair type" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Repair date" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Equipment or component has never been inspected" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Most recent inspection date for the failed equipment or component" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Type of most recent inspection" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Most recent inspection part of the routine inspection program" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="No maintenance done on this equipment or component" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Date of the most recent maintenance work for the failed equipment or component" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Most recent maintenance Type" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Most recent maintenance work part of the routine maintenance program" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="210" y="18" width="156" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Auto set field type because of CSV file</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="258" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Incident Number" selected="True" />
+            <Field field="Incident Types" selected="True" />
+            <Field field="Reported Date" selected="True" />
+            <Field field="Nearest Populated Centre" selected="True" />
+            <Field field="Province" selected="True" />
+            <Field field="Company" selected="True" />
+            <Field field="Status" selected="True" />
+            <Field field="Latitude" selected="True" />
+            <Field field="Longitude" selected="True" />
+            <Field field="Approximate Volume Released (m3)" selected="True" />
+            <Field field="Substance" selected="True" />
+            <Field field="Release Type" selected="True" />
+            <Field field="Significant" selected="True" />
+            <Field field="Year" selected="True" />
+            <Field field="Occurrence Date and Time" selected="True" />
+            <Field field="Discovered Date and Time" selected="True" />
+            <Field field="Detailed what happened" selected="True" />
+            <Field field="What happened category" selected="True" />
+            <Field field="Detailed why it happened" selected="True" />
+            <Field field="Why it happened category" selected="True" />
+            <Field field="Duration of interruption of pipeline operations" selected="True" />
+            <Field field="Pipeline or Facility Type" selected="True" />
+            <Field field="Activity being performed at time of incident" selected="True" />
+            <Field field="How the incident was discovered" selected="True" />
+            <Field field="Closed Date" selected="True" />
+            <Field field="Pipeline or facility equipment involved" selected="True" />
+            <Field field="Rupture" selected="True" />
+            <Field field="Incident type" selected="True" />
+            <Field field="Released substance type" selected="True" />
+            <Field field="Released volume (m3)" selected="True" />
+            <Field field="Pipe body release" selected="True" />
+            <Field field="Residual effects on the environment" selected="True" />
+            <Field field="Source of Explosion" selected="True" />
+            <Field field="Source of Fire" selected="True" />
+            <Field field="Activity at time of fatality" selected="True" />
+            <Field field="Number of fatalities" selected="True" />
+            <Field field="Type of Injury" selected="True" />
+            <Field field="Number of individuals injured" selected="True" />
+            <Field field="Workdays lost" selected="True" />
+            <Field field="Work restricted by injury" selected="True" />
+            <Field field="Conditions that resulted in the operation beyond  limits" selected="True" />
+            <Field field="Conditions that resulted in adverse effects on the environment" selected="True" />
+            <Field field="Number of people evacuated" selected="True" />
+            <Field field="Regulation" selected="True" />
+            <Field field="Pipeline Name" selected="True" />
+            <Field field="Pipeline outside diameter (NPS)" selected="True" />
+            <Field field="Pipeline length (km)" selected="True" />
+            <Field field="Substance carried" selected="True" />
+            <Field field="Facility Name" selected="True" />
+            <Field field="Facility Type" selected="True" />
+            <Field field="Facility latitude" selected="True" />
+            <Field field="Facility longitude" selected="True" />
+            <Field field="Country" selected="True" />
+            <Field field="Affects Company Property" selected="True" />
+            <Field field="Off Company Property" selected="True" />
+            <Field field="Affects Pipeline right-of-way" selected="True" />
+            <Field field="Affects off Pipeline right-of-way" selected="True" />
+            <Field field="Land Use" selected="True" />
+            <Field field="Population Density" selected="True" />
+            <Field field="Kilometre post" selected="True" />
+            <Field field="Emergency Level" selected="True" />
+            <Field field="Investigation Type" selected="True" />
+            <Field field="Was NEB Staff Deployed" selected="True" />
+            <Field field="Related NEB event number" selected="True" />
+            <Field field="Equipment or component involved" selected="True" />
+            <Field field="Design standard" selected="True" />
+            <Field field="Nominal pipe size" selected="True" />
+            <Field field="Material" selected="True" />
+            <Field field="Material grade" selected="True" />
+            <Field field="Schedule" selected="True" />
+            <Field field="Design wall thickness (mm)" selected="True" />
+            <Field field="Custom design wall thickness (mm)" selected="True" />
+            <Field field="Actual wall thickness (mm)" selected="True" />
+            <Field field="Licensed maximum operating pressure (kPa)" selected="True" />
+            <Field field="Restricted operating pressure (kPa)" selected="True" />
+            <Field field="Actual operating pressure at time of failure (kPa)" selected="True" />
+            <Field field="Designed depth of cover (m)" selected="True" />
+            <Field field="Actual depth of cover (m)" selected="True" />
+            <Field field="Year of manufacture" selected="True" />
+            <Field field="Year of installation" selected="True" />
+            <Field field="Year when put into service" selected="True" />
+            <Field field="Most recent cathodic protection reading at incident site (mV vs. Cu/CuSO4)" selected="True" />
+            <Field field="Weld type" selected="True" />
+            <Field field="Seam type" selected="True" />
+            <Field field="Seam joining method" selected="True" />
+            <Field field="Seam clock position" selected="True" />
+            <Field field="Coating location" selected="True" />
+            <Field field="Coating type" selected="True" />
+            <Field field="Coating condition" selected="True" />
+            <Field field="Application method" selected="True" />
+            <Field field="Year when the coating was applied" selected="True" />
+            <Field field="Insulation installed" selected="True" />
+            <Field field="Repair type" selected="True" />
+            <Field field="Repair date" selected="True" />
+            <Field field="Equipment or component has never been inspected" selected="True" />
+            <Field field="Most recent inspection date for the failed equipment or component" selected="True" />
+            <Field field="Type of most recent inspection" selected="True" />
+            <Field field="Most recent inspection part of the routine inspection program" selected="True" />
+            <Field field="No maintenance done on this equipment or component" selected="True" />
+            <Field field="Date of the most recent maintenance work for the failed equipment or component" selected="True" />
+            <Field field="Most recent maintenance Type" selected="True" />
+            <Field field="Most recent maintenance work part of the routine maintenance program" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Incident Number" size="11" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Incident Types" size="55" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Reported Date" size="10" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Nearest Populated Centre" size="80" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Province" size="21" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Company" size="99" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Status" size="19" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Latitude" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="Double" />
+            <Field name="Longitude" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="Double" />
+            <Field name="Approximate Volume Released (m3)" size="14" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Substance" size="38" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Release Type" size="14" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Significant" size="3" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Year" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="Int16" />
+            <Field name="Occurrence Date and Time" size="16" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Discovered Date and Time" size="16" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Detailed what happened" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="What happened category" size="90" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Detailed why it happened" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Why it happened category" size="128" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Duration of interruption of pipeline operations" size="24" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Pipeline or Facility Type" size="12" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Activity being performed at time of incident" size="12" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="How the incident was discovered" size="30" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Closed Date" size="10" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Pipeline or facility equipment involved" size="3" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Rupture" size="3" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Incident type" size="136" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Released substance type" size="38" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Released volume (m3)" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="Double" />
+            <Field name="Pipe body release" size="3" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Residual effects on the environment" size="3" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Source of Explosion" size="30" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Source of Fire" size="33" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Activity at time of fatality" size="22" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Number of fatalities" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="Byte" />
+            <Field name="Type of Injury" size="24" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Number of individuals injured" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="Byte" />
+            <Field name="Workdays lost" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="Byte" />
+            <Field name="Work restricted by injury" size="3" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Conditions that resulted in the operation beyond  limits" size="48" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Conditions that resulted in adverse effects on the environment" size="31" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Number of people evacuated" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="Int16" />
+            <Field name="Regulation" size="7" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Pipeline Name" size="75" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Pipeline outside diameter (NPS)" size="69" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Pipeline length (km)" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="Double" />
+            <Field name="Substance carried" size="81" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Facility Name" size="61" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Facility Type" size="14" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Facility latitude" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="Double" />
+            <Field name="Facility longitude" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="Double" />
+            <Field name="Country" size="6" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Affects Company Property" size="3" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Off Company Property" size="3" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Affects Pipeline right-of-way" size="3" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Affects off Pipeline right-of-way" size="3" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Land Use" size="44" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Population Density" size="198" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Kilometre post" size="50" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Emergency Level" size="13" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Investigation Type" size="37" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Was NEB Staff Deployed" size="3" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Related NEB event number" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Equipment or component involved" size="254" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Design standard" size="75" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Nominal pipe size" size="7" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Material" size="15" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Material grade" size="9" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Schedule" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="Byte" />
+            <Field name="Design wall thickness (mm)" size="18" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Custom design wall thickness (mm)" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="Double" />
+            <Field name="Actual wall thickness (mm)" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="Double" />
+            <Field name="Licensed maximum operating pressure (kPa)" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="Double" />
+            <Field name="Restricted operating pressure (kPa)" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="Int16" />
+            <Field name="Actual operating pressure at time of failure (kPa)" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="Double" />
+            <Field name="Designed depth of cover (m)" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="Double" />
+            <Field name="Actual depth of cover (m)" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="Double" />
+            <Field name="Year of manufacture" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="Int16" />
+            <Field name="Year of installation" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="Int16" />
+            <Field name="Year when put into service" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="Int16" />
+            <Field name="Most recent cathodic protection reading at incident site (mV vs. Cu/CuSO4)" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="Double" />
+            <Field name="Weld type" size="24" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Seam type" size="8" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Seam joining method" size="28" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Seam clock position" size="10" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Coating location" size="8" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Coating type" size="25" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Coating condition" size="12" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Application method" size="13" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Year when the coating was applied" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="Int16" />
+            <Field name="Insulation installed" size="3" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Repair type" size="35" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Repair date" size="10" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Equipment or component has never been inspected" size="3" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Most recent inspection date for the failed equipment or component" size="10" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Type of most recent inspection" size="33" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Most recent inspection part of the routine inspection program" size="3" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="No maintenance done on this equipment or component" size="3" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Date of the most recent maintenance work for the failed equipment or component" size="10" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+            <Field name="Most recent maintenance Type" size="24" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="V_String" />
+            <Field name="Most recent maintenance work part of the routine maintenance program" size="3" source="File: C:\Users\Greg Whyte\Desktop\pipeline_viz\pipeline-incidents-comprehensive-data.csv" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="774" y="30" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Remove Whitespace ]]></Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1050" y="162" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Export file</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="846" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="282" y="210" width="361" height="263" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption><![CDATA[Reorder, Deselect, Rename and Change Field Types ]]></Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="10" Margin="60" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="342" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Incident Number" selected="True" />
+                <SelectField field="Year" selected="False" />
+                <SelectField field="Reported Date" selected="True" />
+                <SelectField field="Province" selected="True" />
+                <SelectField field="Regulation" selected="True" />
+                <SelectField field="Company" selected="True" />
+                <SelectField field="Latitude" selected="True" />
+                <SelectField field="Longitude" selected="True" />
+                <SelectField field="Facility Name" selected="True" />
+                <SelectField field="Facility Type" selected="False" />
+                <SelectField field="Pipeline or facility equipment involved" selected="True" rename="Pipeline/Equipment Involved?" />
+                <SelectField field="Equipment or component has never been inspected" selected="True" rename="Equipment Inspected?" />
+                <SelectField field="Pipeline Name" selected="True" />
+                <SelectField field="Pipeline length (km)" selected="True" />
+                <SelectField field="Rupture" selected="True" />
+                <SelectField field="Released substance type" selected="True" />
+                <SelectField field="Released volume (m3)" selected="True" />
+                <SelectField field="Substance carried" selected="True" />
+                <SelectField field="Incident Types" selected="True" />
+                <SelectField field="Nearest Populated Centre" selected="False" />
+                <SelectField field="Status" selected="True" />
+                <SelectField field="Approximate Volume Released (m3)" selected="False" type="Int16" size="2" />
+                <SelectField field="Substance" selected="True" />
+                <SelectField field="Release Type" selected="True" />
+                <SelectField field="Significant" selected="True" />
+                <SelectField field="Occurrence Date and Time" selected="False" />
+                <SelectField field="Discovered Date and Time" selected="True" />
+                <SelectField field="Detailed what happened" selected="False" />
+                <SelectField field="What happened category" selected="False" rename="What Happened?" />
+                <SelectField field="Detailed why it happened" selected="False" />
+                <SelectField field="Why it happened category" selected="True" rename="Why it Happened" />
+                <SelectField field="Duration of interruption of pipeline operations" selected="False" />
+                <SelectField field="Pipeline or Facility Type" selected="True" />
+                <SelectField field="Activity being performed at time of incident" selected="True" />
+                <SelectField field="How the incident was discovered" selected="False" />
+                <SelectField field="Closed Date" selected="False" />
+                <SelectField field="Incident type" selected="True" />
+                <SelectField field="Pipe body release" selected="False" />
+                <SelectField field="Residual effects on the environment" selected="False" />
+                <SelectField field="Source of Explosion" selected="False" />
+                <SelectField field="Source of Fire" selected="False" />
+                <SelectField field="Activity at time of fatality" selected="False" />
+                <SelectField field="Number of fatalities" selected="True" />
+                <SelectField field="Type of Injury" selected="False" />
+                <SelectField field="Number of individuals injured" selected="True" />
+                <SelectField field="Workdays lost" selected="True" />
+                <SelectField field="Work restricted by injury" selected="False" />
+                <SelectField field="Conditions that resulted in the operation beyond  limits" selected="False" />
+                <SelectField field="Conditions that resulted in adverse effects on the environment" selected="False" />
+                <SelectField field="Number of people evacuated" selected="True" />
+                <SelectField field="Pipeline outside diameter (NPS)" selected="False" />
+                <SelectField field="Facility latitude" selected="False" />
+                <SelectField field="Facility longitude" selected="False" />
+                <SelectField field="Country" selected="False" />
+                <SelectField field="Affects Company Property" selected="False" />
+                <SelectField field="Off Company Property" selected="False" />
+                <SelectField field="Affects Pipeline right-of-way" selected="False" />
+                <SelectField field="Affects off Pipeline right-of-way" selected="False" />
+                <SelectField field="Land Use" selected="False" />
+                <SelectField field="Population Density" selected="False" />
+                <SelectField field="Kilometre post" selected="False" />
+                <SelectField field="Emergency Level" selected="True" />
+                <SelectField field="Investigation Type" selected="False" />
+                <SelectField field="Was NEB Staff Deployed" selected="False" />
+                <SelectField field="Related NEB event number" selected="False" />
+                <SelectField field="Equipment or component involved" selected="False" />
+                <SelectField field="Design standard" selected="False" />
+                <SelectField field="Nominal pipe size" selected="False" />
+                <SelectField field="Material" selected="False" />
+                <SelectField field="Material grade" selected="False" />
+                <SelectField field="Schedule" selected="False" />
+                <SelectField field="Design wall thickness (mm)" selected="False" />
+                <SelectField field="Custom design wall thickness (mm)" selected="False" />
+                <SelectField field="Actual wall thickness (mm)" selected="False" />
+                <SelectField field="Licensed maximum operating pressure (kPa)" selected="False" />
+                <SelectField field="Restricted operating pressure (kPa)" selected="False" />
+                <SelectField field="Actual operating pressure at time of failure (kPa)" selected="False" />
+                <SelectField field="Designed depth of cover (m)" selected="False" />
+                <SelectField field="Actual depth of cover (m)" selected="False" />
+                <SelectField field="Year of manufacture" selected="False" />
+                <SelectField field="Year of installation" selected="False" />
+                <SelectField field="Year when put into service" selected="False" />
+                <SelectField field="Most recent cathodic protection reading at incident site (mV vs. Cu/CuSO4)" selected="False" />
+                <SelectField field="Weld type" selected="False" />
+                <SelectField field="Seam type" selected="False" />
+                <SelectField field="Seam joining method" selected="False" />
+                <SelectField field="Seam clock position" selected="False" />
+                <SelectField field="Coating location" selected="False" />
+                <SelectField field="Coating type" selected="False" />
+                <SelectField field="Coating condition" selected="False" />
+                <SelectField field="Application method" selected="False" />
+                <SelectField field="Year when the coating was applied" selected="False" />
+                <SelectField field="Insulation installed" selected="False" />
+                <SelectField field="Repair type" selected="False" />
+                <SelectField field="Repair date" selected="False" />
+                <SelectField field="Most recent inspection date for the failed equipment or component" selected="False" />
+                <SelectField field="Type of most recent inspection" selected="False" />
+                <SelectField field="Most recent inspection part of the routine inspection program" selected="False" />
+                <SelectField field="No maintenance done on this equipment or component" selected="True" />
+                <SelectField field="Date of the most recent maintenance work for the failed equipment or component" selected="False" />
+                <SelectField field="Most recent maintenance Type" selected="False" />
+                <SelectField field="Most recent maintenance work part of the routine maintenance program" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="462" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Incident Number" selected="True" />
+                <SelectField field="Province" selected="True" />
+                <SelectField field="Incident type" selected="True" />
+                <SelectField field="Incident Types" selected="True" />
+                <SelectField field="Emergency Level" selected="True" />
+                <SelectField field="Reported Date" selected="True" />
+                <SelectField field="Discovered Date and Time" selected="True" />
+                <SelectField field="Regulation" selected="True" />
+                <SelectField field="Status" selected="True" />
+                <SelectField field="Company" selected="True" />
+                <SelectField field="Latitude" selected="True" />
+                <SelectField field="Longitude" selected="True" />
+                <SelectField field="Facility Name" selected="True" />
+                <SelectField field="Pipeline or Facility Type" selected="True" />
+                <SelectField field="Pipeline Name" selected="True" />
+                <SelectField field="Pipeline length (km)" selected="True" type="Float" size="4" />
+                <SelectField field="Pipeline/Equipment Involved?" selected="True" />
+                <SelectField field="Equipment Inspected?" selected="True" />
+                <SelectField field="No maintenance done on this equipment or component" selected="True" />
+                <SelectField field="Substance" selected="True" />
+                <SelectField field="Rupture" selected="True" />
+                <SelectField field="Released substance type" selected="True" />
+                <SelectField field="Release Type" selected="True" />
+                <SelectField field="Released volume (m3)" selected="True" />
+                <SelectField field="Substance carried" selected="True" />
+                <SelectField field="Occurrence Date and Time" selected="True" />
+                <SelectField field="Why it Happened" selected="True" />
+                <SelectField field="Significant" selected="True" />
+                <SelectField field="Activity being performed at time of incident" selected="True" />
+                <SelectField field="Workdays lost" selected="True" />
+                <SelectField field="Number of fatalities" selected="True" type="Int16" size="2" />
+                <SelectField field="Number of individuals injured" selected="True" type="Int16" size="2" />
+                <SelectField field="Number of people evacuated" selected="True" />
+                <SelectField field="Most recent inspection date for the failed equipment or component" selected="True" />
+                <SelectField field="Facility Type" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="522" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\WINDOWS\TEMP\Engine_15672_20fdf031b41b4102940e828332dbce24_\Engine_9040_125bdc4dcbb14a088afb3c5ac5053fef_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="10" Connection="Output26" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output26" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Pipelines</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
