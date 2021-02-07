@@ -6,7 +6,7 @@ The Canada Energy Regulator (CER) quarterly publishes a pipeline incidents datas
 
 
 ## Data Source
-The Open Government website provides access to dataset and can be viewed [here](https://open.canada.ca/data/en/dataset/7dffedc4-23fa-440c-a36d-adf5a6cc09f1)
+The Open Government website provides access to dataset and can be viewed [here](https://open.canada.ca/data/en/dataset/7dffedc4-23fa-440c-a36d-adf5a6cc09f1).
 
 
 ## Addition of Alteryx Workflow
