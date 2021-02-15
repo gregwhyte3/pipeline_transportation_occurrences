@@ -19,9 +19,11 @@ Alteryx Workflow is shown below.
 ![Workflow](https://github.com/gregwhyte3/pipeline_transportation_occurrences/blob/master/Alteryx%20Workflow/alteryx_pipeline.PNG)
 
 
-## Next Steps
-* Exploratory Data Analysis
-* Design Tableau Dashboard for key metrics
+## Data Visualization In Tableau
+Below is a snapshot of the dashboard I recently uploaded to Tableau Public. It can be accessed [here](https://public.tableau.com/profile/greg.whyte#!/vizhome/PipelineIncidentsinCanada/final).
+
+
+![Dashboard](https://github.com/gregwhyte3/pipeline_transportation_occurrences/blob/master/Tableau/Dashboard.png)
 
 
 
